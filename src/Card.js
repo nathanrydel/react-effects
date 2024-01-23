@@ -12,9 +12,12 @@ import './Card.css';
  * CardDeck -> Card
  */
 
-function Card() {
+function Card({card}) {
+  console.log("The card component is passed:", card);
   return (
-    <div>Card</div>
+    <div>
+      <img src={card.image} alt={card.code}/>
+    </div>
   );
 }
 
